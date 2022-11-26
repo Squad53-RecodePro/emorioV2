@@ -1,7 +1,5 @@
 import {
   Box,
-  Button,
-  ButtonGroup,
   Container,
   Flex,
   IconButton,
@@ -9,18 +7,16 @@ import {
   Popover,
   PopoverArrow,
   PopoverBody,
-  PopoverCloseButton,
   PopoverContent,
-  PopoverHeader,
   PopoverTrigger,
-  Spacer,
   Stack,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import React from "react";
 import { TextButton } from "./Button/TextButton";
 
 import { AiOutlineMenu } from "react-icons/ai";
+
+import Router from "next/router";
 
 export const Header = () => {
   const isMobile = useBreakpointValue({
@@ -37,6 +33,8 @@ export const Header = () => {
       >
         <Box>
           <Image
+            onClick={() => Router.push("/")}
+            cursor="pointer"
             boxSize="100px"
             objectFit="contain"
             src="/images/logo-principal.png"
@@ -48,22 +46,28 @@ export const Header = () => {
             <PopoverTrigger>
               <IconButton aria-label="menu" icon={<AiOutlineMenu />} />
             </PopoverTrigger>
-            <PopoverContent>
+            <PopoverContent w={200}>
               <PopoverArrow />
               <PopoverBody>
-                <TextButton>Início</TextButton>
-                <TextButton>Blog</TextButton>
-                <TextButton>Sobre</TextButton>
-                <TextButton>Equipe</TextButton>
-                <TextButton>Contato</TextButton>
-                <TextButton>Projetos</TextButton>
+                <Stack>
+                  <TextButton onClick={() => Router.push("/")}>
+                    Início
+                  </TextButton>
+                  <TextButton onClick={() => Router.push("/blog")}>
+                    Blog
+                  </TextButton>
+                  <TextButton>Sobre</TextButton>
+                  <TextButton>Equipe</TextButton>
+                  <TextButton>Contato</TextButton>
+                  <TextButton>Projetos</TextButton>
+                </Stack>
               </PopoverBody>
             </PopoverContent>
           </Popover>
         ) : (
           <Stack direction={"row"} spacing={10}>
-            <TextButton>Início</TextButton>
-            <TextButton>Blog</TextButton>
+            <TextButton onClick={() => Router.push("/")}>Início</TextButton>
+            <TextButton onClick={() => Router.push("/blog")}>Blog</TextButton>
             <TextButton>Sobre</TextButton>
             <TextButton>Equipe</TextButton>
             <TextButton>Contato</TextButton>

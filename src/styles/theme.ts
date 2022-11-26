@@ -13,6 +13,10 @@ export const theme = extendTheme({
     mix: {
       100: "linear-gradient(to right, #f12711, #f5af19)",
     },
+    white: {
+      100: "#ffffff",
+      200: "#fbf9ff",
+    },
     orange: {
       100: "#ee390f",
     },

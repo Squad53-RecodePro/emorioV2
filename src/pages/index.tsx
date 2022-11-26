@@ -33,7 +33,14 @@ import { ParticipantsCard } from "../components/Card/ParticipantsCard";
 import { DividerSection } from "../components/DividerSection";
 import { listParticipants } from "../utils/mockParticipants";
 
+import { useCounterUp } from "../hooks/useCounterUp";
+
 const Home: NextPage = () => {
+  const project = useCounterUp(3, 1000);
+  const people = useCounterUp(242, 1);
+  const stateAffected = useCounterUp(3, 1000);
+  const professionals = useCounterUp(26, 100);
+
   const isMobile = useBreakpointValue({
     base: true,
     lg: false,
@@ -133,14 +140,16 @@ const Home: NextPage = () => {
           maxWidth={"container.xl"}
           mt={100}
         >
-          <Stack mt={5} direction={isMobile ? "column" : "row"}>
-            <Image
-              boxSize={isMobile ? "sm" : "md"}
-              src="/images/learning-home.png"
-              alt="Learning Home"
-            />
+          <Stack mt={5} py={20} direction={isMobile ? "column" : "row"}>
+            <Box w={isMobile ? "full" : "50rem"}>
+              <Image
+                boxSize={isMobile ? "sm" : "xl"}
+                src="/images/learning-home.png"
+                alt="Learning Home"
+              />
+            </Box>
 
-            <Stack spacing={5}>
+            <Stack spacing={10}>
               <TitleUppercase title="Sobre nós" />
 
               <Text as="b" color={"blue.100"} fontSize={"4xl"}>
@@ -178,7 +187,7 @@ const Home: NextPage = () => {
         >
           <Stack color={"white"} align={"center"} spacing={5}>
             <Text as="b" fontSize={"5xl"}>
-              3
+              {project}
             </Text>
             <Divider w={isMobile ? 100 : 200} borderColor="white" />
             <Text as="b" fontSize={"2xl"}>
@@ -192,7 +201,7 @@ const Home: NextPage = () => {
             spacing={5}
           >
             <Text as="b" fontSize={"5xl"}>
-              242
+              {people}
             </Text>
             <Divider w={isMobile ? 100 : 200} borderColor="white" />
             <Text as="b" fontSize={"2xl"}>
@@ -206,7 +215,7 @@ const Home: NextPage = () => {
             spacing={5}
           >
             <Text as="b" fontSize={"5xl"}>
-              3
+              {stateAffected}
             </Text>
             <Divider w={isMobile ? 100 : 200} borderColor="white" />
             <Text as="b" fontSize={"2xl"}>
@@ -220,7 +229,7 @@ const Home: NextPage = () => {
             spacing={5}
           >
             <Text as="b" fontSize={"5xl"}>
-              26
+              {professionals}
             </Text>
             <Divider w={isMobile ? 100 : 200} borderColor="white" />
             <Text as="b" fontSize={"2xl"}>
@@ -350,21 +359,21 @@ const Home: NextPage = () => {
               description="Dentre as várias obras primas contidas neste disco, o destaque aqui é dado para a música “Emoriô” (Gilberto Gil/João Donato) que ganhou literalmente o mundo a partir de diferentes intérpretes além do próprio Donato."
               tag="Música"
               image="/images/blog/gil-bayana.jpg"
-              route=""
+              route="/blog/3"
             />
             <ArticleCard
               title="Como A EmoriÔ Digital Auxilia Na Erradicação Do Analfabetismo Nas Zonas Rurais"
               description="Enxergamos que apoiar projetos socioculturais que atuem no campo, zonas rurais e florestas é uma ótima forma de melhorar a educação, a sociedade e o mundo."
               tag="Analfabetismo"
               image="/images/blog/avo-crianca.jpg"
-              route=""
+              route="/blog/7"
             />
             <ArticleCard
               title="Como A Música Auxilia Na Educação"
               description="O alfabetismo é visto a partir da valorização da cultura escrita, ou seja, elementos da leitura e da escrita que fazem parte da vida do aluno e da prática social."
               tag="Tecnologia"
               image="/images/blog/menino-violao.jpg"
-              route=""
+              route="/blog/4"
             />
           </Stack>
         </Container>
