@@ -1,6 +1,14 @@
 import { extendTheme } from "@chakra-ui/react";
 
 export const theme = extendTheme({
+  breakpoints: {
+    xs: "15em",
+    sm: "30em",
+    md: "48em",
+    lg: "62em",
+    xl: "80em",
+    "2xl": "96em",
+  },
   colors: {
     mix: {
       100: "linear-gradient(to right, #f12711, #f5af19)",

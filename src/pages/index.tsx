@@ -10,6 +10,7 @@ import {
   Image,
   Stack,
   Text,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import { NextPage } from "next";
 import Head from "next/head";
@@ -33,6 +34,11 @@ import { DividerSection } from "../components/DividerSection";
 import { listParticipants } from "../utils/mockParticipants";
 
 const Home: NextPage = () => {
+  const isMobile = useBreakpointValue({
+    base: true,
+    lg: false,
+  });
+
   return (
     <>
       <Head>
@@ -43,46 +49,47 @@ const Home: NextPage = () => {
         <Box
           bgImage="url(/images/waves/bg-home.png)"
           bgRepeat="no-repeat"
-          bgPosition="right"
+          bgPosition="top right"
           w={"full"}
         >
           <Container maxWidth={"container.xl"} pt={100}>
-            {/* Banner */}
-            <Grid pt={50} templateColumns="repeat(2, 1fr)" gap={10}>
-              <GridItem colSpan={1}>
-                <Stack spacing={5}>
-                  <Text as="b" color={"blue.100"} fontSize={"sm"}>
-                    EMPODERAMENTO DIGITAL E VISIBILIDADE
-                  </Text>
-                  <Text as="b" color={"blue.100"} fontSize={"5xl"}>
-                    Aliando Tecnologia À Cultura, Conectamos Projetos Do Campo
-                    Ao Mundo Virtual
-                  </Text>
-                  <Text color={"blue.100"} fontSize={"md"}>
-                    Vamos dar visibilidade e ecoar projetos socioculturais que
-                    atuem no campo, em zonas rurais, áreas afastadas do centro
-                    urbano e tecnológico. Criar pontes para facilitar o acesso à
-                    educação, à dignidade humana, o empoderamento digital.
-                  </Text>
-                  <Stack direction="row" w={"sm"}>
-                    <PrimaryButton>Saiba Mais</PrimaryButton>
-                    <GhostButton>Projetos</GhostButton>
-                  </Stack>
+            <Stack mt={5} direction={isMobile ? "column-reverse" : "row"}>
+              <Stack spacing={5}>
+                <Text as="b" color={"blue.100"} fontSize={"sm"}>
+                  EMPODERAMENTO DIGITAL E VISIBILIDADE
+                </Text>
+                <Text as="b" color={"blue.100"} fontSize={"5xl"}>
+                  Aliando Tecnologia À Cultura, Conectamos Projetos Do Campo Ao
+                  Mundo Virtual
+                </Text>
+                <Text color={"blue.100"} fontSize={"md"}>
+                  Vamos dar visibilidade e ecoar projetos socioculturais que
+                  atuem no campo, em zonas rurais, áreas afastadas do centro
+                  urbano e tecnológico. Criar pontes para facilitar o acesso à
+                  educação, à dignidade humana, o empoderamento digital.
+                </Text>
+                <Stack
+                  direction={isMobile ? "column" : "row"}
+                  w={isMobile ? "xs" : "sm"}
+                >
+                  <PrimaryButton>Saiba Mais</PrimaryButton>
+                  <GhostButton>Projetos</GhostButton>
                 </Stack>
-              </GridItem>
-              <GridItem colSpan={1}>
-                <Image
-                  boxSize="xl"
-                  src="/images/banner-home.png"
-                  alt="Banner Home"
-                />
-              </GridItem>
-            </Grid>
+              </Stack>
+              <Image
+                boxSize={isMobile ? "sm" : "xl"}
+                src="/images/banner-home.png"
+                alt="Banner Home"
+              />
+            </Stack>
           </Container>
         </Box>
         {/* Reality */}
         <Container maxWidth={"container.xl"} py={100}>
-          <Grid templateColumns="repeat(4, 1fr)" gap={10}>
+          <Grid
+            templateColumns={isMobile ? "repeat(1, 1fr)" : "repeat(4, 1fr)"}
+            gap={10}
+          >
             <GridItem colSpan={1}>
               <Stack spacing={5}>
                 <Heading size="xl">Transformar em Realidade</Heading>
@@ -124,86 +131,98 @@ const Home: NextPage = () => {
           bgRepeat="no-repeat"
           bgPosition="left"
           maxWidth={"container.xl"}
-          pt={100}
+          mt={100}
         >
-          <Grid templateColumns="repeat(2, 1fr)" gap={10}>
-            <GridItem colSpan={1}>
-              <Image
-                boxSize="md"
-                src="/images/learning-home.png"
-                alt="Learning Home"
-              />
-            </GridItem>
-            <GridItem
-              display={"flex"}
-              alignItems={"center"}
-              justifyContent={"center"}
-              colSpan={1}
-            >
-              <Stack spacing={5}>
-                <TitleUppercase title="Sobre nós" />
+          <Stack mt={5} direction={isMobile ? "column" : "row"}>
+            <Image
+              boxSize={isMobile ? "sm" : "md"}
+              src="/images/learning-home.png"
+              alt="Learning Home"
+            />
 
-                <Text as="b" color={"blue.100"} fontSize={"4xl"}>
-                  Aprendendo com amor e riso
+            <Stack spacing={5}>
+              <TitleUppercase title="Sobre nós" />
+
+              <Text as="b" color={"blue.100"} fontSize={"4xl"}>
+                Aprendendo com amor e riso
+              </Text>
+              <Text color={"blue.100"} fontSize={"sm"}>
+                <Badge>Aprender</Badge>, palavra que nos define desde o nosso
+                nascimento, é a base de todas pessoas e de onde podemos realizar
+                nossos objetivos de vida.
+              </Text>
+              <Flex gap={5} alignItems={"center"}>
+                <MdEditNote />
+                <Text fontSize={"sm"}>
+                  Acreditamos em um futuro melhor e que a educação salva vidas
                 </Text>
-                <Text color={"blue.100"} fontSize={"sm"}>
-                  <Badge>Aprender</Badge>, palavra que nos define desde o nosso
-                  nascimento, é a base de todas pessoas e de onde podemos
-                  realizar nossos objetivos de vida.
+              </Flex>
+              <Flex gap={5} alignItems={"center"}>
+                <TfiRulerPencil />
+                <Text fontSize={"sm"}>
+                  Materiais disponibilizados por nossos parceiros
                 </Text>
-                <Flex gap={5} alignItems={"center"}>
-                  <MdEditNote />
-                  <Text fontSize={"sm"}>
-                    Acreditamos em um futuro melhor e que a educação salva vidas
-                  </Text>
-                </Flex>
-                <Flex gap={5} alignItems={"center"}>
-                  <TfiRulerPencil />
-                  <Text fontSize={"sm"}>
-                    Materiais disponibilizados por nossos parceiros
-                  </Text>
-                </Flex>
-                <Stack direction="row" w={"sm"}>
-                  <PrimaryButton>Consulte Mais Informações</PrimaryButton>
-                </Stack>
-              </Stack>
-            </GridItem>
-          </Grid>
+              </Flex>
+
+              <PrimaryButton>Consulte Mais Informações</PrimaryButton>
+            </Stack>
+          </Stack>
         </Container>
         {/* Counter */}
-        <Flex bg={"mix.100"} justifyContent={"space-evenly"} py={100} my={100}>
+        <Flex
+          flexDirection={isMobile ? "column" : "row"}
+          bg={"mix.100"}
+          justifyContent={"space-evenly"}
+          py={100}
+          my={100}
+        >
           <Stack color={"white"} align={"center"} spacing={5}>
             <Text as="b" fontSize={"5xl"}>
               3
             </Text>
-            <Divider />
+            <Divider w={isMobile ? 100 : 200} borderColor="white" />
             <Text as="b" fontSize={"2xl"}>
               Projetos Apoiados
             </Text>
           </Stack>
-          <Stack color={"white"} align={"center"} spacing={5}>
+          <Stack
+            mt={isMobile ? 10 : 0}
+            color={"white"}
+            align={"center"}
+            spacing={5}
+          >
             <Text as="b" fontSize={"5xl"}>
               242
             </Text>
-            <Divider />
+            <Divider w={isMobile ? 100 : 200} borderColor="white" />
             <Text as="b" fontSize={"2xl"}>
               Pessoas Alcançadas
             </Text>
           </Stack>
-          <Stack color={"white"} align={"center"} spacing={5}>
+          <Stack
+            mt={isMobile ? 10 : 0}
+            color={"white"}
+            align={"center"}
+            spacing={5}
+          >
             <Text as="b" fontSize={"5xl"}>
               3
             </Text>
-            <Divider />
+            <Divider w={isMobile ? 100 : 200} borderColor="white" />
             <Text as="b" fontSize={"2xl"}>
               Estados Atingidos
             </Text>
           </Stack>
-          <Stack color={"white"} align={"center"} spacing={5}>
+          <Stack
+            mt={isMobile ? 10 : 0}
+            color={"white"}
+            align={"center"}
+            spacing={5}
+          >
             <Text as="b" fontSize={"5xl"}>
               26
             </Text>
-            <Divider />
+            <Divider w={isMobile ? 100 : 200} borderColor="white" />
             <Text as="b" fontSize={"2xl"}>
               Profissionais Envolvidos
             </Text>
@@ -212,7 +231,11 @@ const Home: NextPage = () => {
         {/* Informations */}
 
         <Container maxWidth={"container.xl"} pt={100}>
-          <Grid pt={50} templateColumns="repeat(2, 1fr)" gap={10}>
+          <Grid
+            pt={50}
+            templateColumns={isMobile ? "repeat(1, 1fr)" : "repeat(2, 1fr)"}
+            gap={10}
+          >
             <GridItem colSpan={1}>
               <Stack spacing={5}>
                 <TitleUppercase title="EDUCAÇÃO E TECNOLOGIA" />
@@ -273,7 +296,11 @@ const Home: NextPage = () => {
               bgPosition="left"
               colSpan={1}
             >
-              <Image boxSize="xl" src="/images/to-read.png" alt="Banner Home" />
+              <Image
+                boxSize={isMobile ? "sm" : "xl"}
+                src="/images/to-read.png"
+                alt="Banner Home"
+              />
             </GridItem>
           </Grid>
         </Container>
@@ -290,6 +317,7 @@ const Home: NextPage = () => {
           showArrows={true}
           showIndicators={false}
           showStatus={false}
+          showThumbs={false}
         >
           {listParticipants.map((item) => (
             <Flex
@@ -312,7 +340,11 @@ const Home: NextPage = () => {
         <DividerSection title="Artigos" subTitle="NOSSO BLOG" />
 
         <Container maxWidth={"container.xl"} my={100}>
-          <Stack justifyContent={"center"} direction={"row"} spacing={5}>
+          <Stack
+            justifyContent={"center"}
+            direction={isMobile ? "column" : "row"}
+            spacing={5}
+          >
             <ArticleCard
               title="Emoriô: Conheça A Música Que Inspirou Nossa Agência."
               description="Dentre as várias obras primas contidas neste disco, o destaque aqui é dado para a música “Emoriô” (Gilberto Gil/João Donato) que ganhou literalmente o mundo a partir de diferentes intérpretes além do próprio Donato."

@@ -7,10 +7,15 @@ import {
   Text,
   SimpleGrid,
   Highlight,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import React from "react";
 
 export const Footer = () => {
+  const isMobile = useBreakpointValue({
+    base: true,
+    lg: false,
+  });
   return (
     <Flex flexDir={"column"} bg={"gray.100"} alignItems={"center"}>
       <Container
@@ -20,8 +25,8 @@ export const Footer = () => {
         maxWidth={"container.xl"}
         py={10}
       >
-        <SimpleGrid w={"full"} columns={2} spacing={20}>
-          <Stack w={"md"} spacing={5} justifyContent="center">
+        <SimpleGrid w={"full"} columns={isMobile ? 1 : 2} spacing={20}>
+          <Stack w={isMobile ? "xs" : "md"} spacing={5} justifyContent="center">
             <Image src="/images/logo-principal.png" alt="Logo" />
             <Text textAlign={"justify"} color={"gray.200"}>
               Vamos dar visibilidade e ecoar projetos socioculturais que atuem
@@ -73,10 +78,11 @@ export const Footer = () => {
       <Divider />
       <Container
         display={"flex"}
+        flexDirection={isMobile ? "column" : "row"}
         alignItems={"center"}
         justifyContent={"center"}
         maxWidth={"container.xl"}
-        gap={20}
+        gap={isMobile ? 5 : 20}
       >
         <Highlight
           query="SQUAD 053"
