@@ -138,44 +138,48 @@ const Home: NextPage = () => {
           bgRepeat="no-repeat"
           bgPosition="left"
           maxWidth={"container.xl"}
-          mt={100}
+          my={100}
         >
-          <Stack mt={5} py={20} direction={isMobile ? "column" : "row"}>
-            <Box w={isMobile ? "full" : "50rem"}>
+          <Grid
+            templateColumns={isMobile ? "repeat(1, 1fr)" : "repeat(2, 1fr)"}
+            gap={6}
+          >
+            <GridItem>
               <Image
                 boxSize={isMobile ? "sm" : "xl"}
                 src="/images/learning-home.png"
                 alt="Learning Home"
               />
-            </Box>
+            </GridItem>
+            <GridItem>
+              <Stack spacing={10}>
+                <TitleUppercase title="Sobre nós" />
 
-            <Stack spacing={10}>
-              <TitleUppercase title="Sobre nós" />
-
-              <Text as="b" color={"blue.100"} fontSize={"4xl"}>
-                Aprendendo com amor e riso
-              </Text>
-              <Text color={"blue.100"} fontSize={"sm"}>
-                <Badge>Aprender</Badge>, palavra que nos define desde o nosso
-                nascimento, é a base de todas pessoas e de onde podemos realizar
-                nossos objetivos de vida.
-              </Text>
-              <Flex gap={5} alignItems={"center"}>
-                <MdEditNote />
-                <Text fontSize={"sm"}>
-                  Acreditamos em um futuro melhor e que a educação salva vidas
+                <Text as="b" color={"blue.100"} fontSize={"4xl"}>
+                  Aprendendo com amor e riso
                 </Text>
-              </Flex>
-              <Flex gap={5} alignItems={"center"}>
-                <TfiRulerPencil />
-                <Text fontSize={"sm"}>
-                  Materiais disponibilizados por nossos parceiros
+                <Text color={"blue.100"} fontSize={"sm"}>
+                  <Badge>Aprender</Badge>, palavra que nos define desde o nosso
+                  nascimento, é a base de todas pessoas e de onde podemos
+                  realizar nossos objetivos de vida.
                 </Text>
-              </Flex>
+                <Flex gap={5} alignItems={"center"}>
+                  <MdEditNote />
+                  <Text fontSize={"sm"}>
+                    Acreditamos em um futuro melhor e que a educação salva vidas
+                  </Text>
+                </Flex>
+                <Flex gap={5} alignItems={"center"}>
+                  <TfiRulerPencil />
+                  <Text fontSize={"sm"}>
+                    Materiais disponibilizados por nossos parceiros
+                  </Text>
+                </Flex>
 
-              <PrimaryButton>Consulte Mais Informações</PrimaryButton>
-            </Stack>
-          </Stack>
+                <PrimaryButton>Consulte Mais Informações</PrimaryButton>
+              </Stack>
+            </GridItem>
+          </Grid>
         </Container>
         {/* Counter */}
         <Flex

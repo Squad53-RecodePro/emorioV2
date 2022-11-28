@@ -48,7 +48,7 @@ export const Header = () => {
             </PopoverTrigger>
             <PopoverContent w={200}>
               <PopoverArrow />
-              <PopoverBody>
+              <PopoverBody border={"none"} bg="white.200">
                 <Stack>
                   <TextButton onClick={() => Router.push("/")}>
                     Início
@@ -56,7 +56,9 @@ export const Header = () => {
                   <TextButton onClick={() => Router.push("/blog")}>
                     Blog
                   </TextButton>
-                  <TextButton>Sobre</TextButton>
+                  <TextButton onClick={() => Router.push("/about")}>
+                    Sobre
+                  </TextButton>
                   <TextButton>Equipe</TextButton>
                   <TextButton>Contato</TextButton>
                   <TextButton>Projetos</TextButton>
@@ -68,7 +70,7 @@ export const Header = () => {
           <Stack direction={"row"} spacing={10}>
             <TextButton onClick={() => Router.push("/")}>Início</TextButton>
             <TextButton onClick={() => Router.push("/blog")}>Blog</TextButton>
-            <TextButton>Sobre</TextButton>
+            <TextButton onClick={() => Router.push("/about")}>Sobre</TextButton>
             <TextButton>Equipe</TextButton>
             <TextButton>Contato</TextButton>
             <TextButton>Projetos</TextButton>

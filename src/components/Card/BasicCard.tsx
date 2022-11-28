@@ -9,6 +9,8 @@ interface Props {
 export const BasicCard = ({ title, description, icon }: Props) => {
   return (
     <Card
+      h={"full"}
+      maxH={"md"}
       size={"lg"}
       p={5}
       border="solid 1px"
@@ -22,6 +24,7 @@ export const BasicCard = ({ title, description, icon }: Props) => {
       <CardBody>
         <Stack alignItems={"center"} justifyContent={"center"}>
           <Box
+            display={"flex"}
             p={4}
             bg={"gray.300"}
             borderRadius={"full"}
