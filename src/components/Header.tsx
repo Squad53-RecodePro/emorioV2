@@ -59,7 +59,9 @@ export const Header = () => {
                   <TextButton onClick={() => Router.push("/about")}>
                     Sobre
                   </TextButton>
-                  <TextButton>Equipe</TextButton>
+                  <TextButton onClick={() => Router.push("/team")}>
+                    Equipe
+                  </TextButton>
                   <TextButton>Contato</TextButton>
                   <TextButton>Projetos</TextButton>
                 </Stack>
@@ -71,7 +73,7 @@ export const Header = () => {
             <TextButton onClick={() => Router.push("/")}>Início</TextButton>
             <TextButton onClick={() => Router.push("/blog")}>Blog</TextButton>
             <TextButton onClick={() => Router.push("/about")}>Sobre</TextButton>
-            <TextButton>Equipe</TextButton>
+            <TextButton onClick={() => Router.push("/team")}>Equipe</TextButton>
             <TextButton>Contato</TextButton>
             <TextButton>Projetos</TextButton>
           </Stack>

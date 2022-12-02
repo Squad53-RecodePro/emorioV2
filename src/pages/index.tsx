@@ -77,7 +77,7 @@ const Home: NextPage = () => {
                 </Text>
                 <Stack
                   direction={isMobile ? "column" : "row"}
-                  w={isMobile ? "xs" : "sm"}
+                  w={isMobile ? "full" : "sm"}
                 >
                   <PrimaryButton>Saiba Mais</PrimaryButton>
                   <GhostButton>Projetos</GhostButton>
@@ -355,6 +355,7 @@ const Home: NextPage = () => {
         <Container maxWidth={"container.xl"} my={100}>
           <Stack
             justifyContent={"center"}
+            alignItems={isMobile ? "center" : "start"}
             direction={isMobile ? "column" : "row"}
             spacing={5}
           >

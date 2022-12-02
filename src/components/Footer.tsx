@@ -26,7 +26,11 @@ export const Footer = () => {
         py={10}
       >
         <SimpleGrid w={"full"} columns={isMobile ? 1 : 2} spacing={20}>
-          <Stack w={isMobile ? "xs" : "md"} spacing={5} justifyContent="center">
+          <Stack
+            w={isMobile ? "full" : "md"}
+            spacing={5}
+            justifyContent="center"
+          >
             <Image src="/images/logo-principal.png" alt="Logo" />
             <Text textAlign={"justify"} color={"gray.200"}>
               Vamos dar visibilidade e ecoar projetos socioculturais que atuem
@@ -38,7 +42,7 @@ export const Footer = () => {
               Somos inovadores, diversos e plurais. Somos a EmoriÔ.
             </Text>
           </Stack>
-          <Stack spacing={5} justifyContent="center">
+          <Stack spacing={5} justifyContent="center" alignItems={"center"}>
             <Text as="b" color={"blue.100"} fontSize={30}>
               Contato
             </Text>

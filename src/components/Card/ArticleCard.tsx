@@ -1,5 +1,6 @@
 import {
   Badge,
+  Box,
   Card,
   CardBody,
   CardFooter,
@@ -32,13 +33,20 @@ export const ArticleCard = ({
   return (
     <Card maxW="sm">
       <CardHeader>
-        <Image objectFit="cover" src={image} alt={title} borderRadius="lg" />
+        <Box
+          w={"full"}
+          h={200}
+          bgImage={image}
+          bgPos={"center"}
+          bgRepeat="no-repeat"
+          bgSize={"cover"}
+        />
       </CardHeader>
       <CardBody>
         <Badge bg={"orange.100"} color={"white"} p={3}>
           {tag}
         </Badge>
-        <Stack mt="6" spacing="3">
+        <Stack mt="6" spacing="3" h={200}>
           <Heading size="md">{title}</Heading>
           <Text color={"gray.200"} fontSize={"sm"}>
             {description}

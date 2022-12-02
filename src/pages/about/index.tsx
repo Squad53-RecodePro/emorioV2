@@ -111,7 +111,7 @@ const About: NextPage = () => {
           >
             <GridItem>
               <Image
-                boxSize={isMobile ? "sm" : "xl"}
+                boxSize={isMobile ? "full" : "xl"}
                 src="/images/about/doacao.jpg"
                 alt="Doações"
               />
