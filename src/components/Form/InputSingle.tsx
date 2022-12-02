@@ -12,26 +12,20 @@ import { FieldError } from "react-hook-form";
 
 interface InputProps extends ChakraInputProps {
   nameInput: string;
-  icon?: React.ComponentType;
+
   label: string;
   error?: FieldError;
-  width?: string | number;
 }
 
 const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
-  { icon, label, error = null, nameInput, width, ...rest },
+  { label, nameInput, error = null, ...rest },
   ref
 ) => {
   return (
     <FormControl isInvalid={!!error}>
-      <InputGroup color="gray.100" _focusWithin={{ color: "blue.100" }}>
-        {icon && (
-          <InputLeftElement h={"full"} pointerEvents="none">
-            <Icon as={icon} fontSize="20" />
-          </InputLeftElement>
-        )}
+      <InputGroup>
         <ChakraInput
-          w={width}
+          w={"full"}
           name={nameInput}
           id={nameInput}
           placeholder={label}
@@ -40,9 +34,8 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
           bgColor="transparent"
           variant="filled"
           _hover={{
-            borderColor: "gray.100",
+            borderColor: "blue.100",
           }}
-          paddingY="6"
           ref={ref}
           {...rest}
         />
@@ -52,4 +45,4 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
   );
 };
 
-export const SingleInput = forwardRef(InputBase);
+export const InputSingle = forwardRef(InputBase);

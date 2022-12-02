@@ -11,7 +11,7 @@ export const DividerSection = ({ title, subTitle }: Props) => {
       <Text fontSize={"xs"} textTransform="uppercase">
         {subTitle}
       </Text>
-      <Heading fontSize={"5xl"}>{title}</Heading>
+      <Heading fontSize={"4xl"}>{title}</Heading>
       <Box w={100} bg={"orange.100"} h={0.5} />
     </Stack>
   );

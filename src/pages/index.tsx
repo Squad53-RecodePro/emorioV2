@@ -14,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { NextPage } from "next";
 import Head from "next/head";
+import Router from "next/router";
 
 import { GhostButton } from "../components/Button/GhostButton";
 import { PrimaryButton } from "../components/Button/PrimaryButton";
@@ -79,8 +80,12 @@ const Home: NextPage = () => {
                   direction={isMobile ? "column" : "row"}
                   w={isMobile ? "full" : "sm"}
                 >
-                  <PrimaryButton>Saiba Mais</PrimaryButton>
-                  <GhostButton>Projetos</GhostButton>
+                  <PrimaryButton onClick={() => Router.push("/about")}>
+                    Saiba Mais
+                  </PrimaryButton>
+                  <GhostButton onClick={() => Router.push("/blog")}>
+                    Projetos
+                  </GhostButton>
                 </Stack>
               </Stack>
               <Image
@@ -106,7 +111,9 @@ const Home: NextPage = () => {
                   precisa ser feita. A educação, como prevê a nossa
                   Constituição, é um direito de todos.
                 </Text>
-                <PrimaryButton>Saiba Mais</PrimaryButton>
+                <PrimaryButton onClick={() => Router.push("/team")}>
+                  Time Emoriô
+                </PrimaryButton>
               </Stack>
             </GridItem>
             <GridItem colSpan={1}>
@@ -176,7 +183,9 @@ const Home: NextPage = () => {
                   </Text>
                 </Flex>
 
-                <PrimaryButton>Consulte Mais Informações</PrimaryButton>
+                <PrimaryButton onClick={() => Router.push("/about")}>
+                  Consulte Mais Informações
+                </PrimaryButton>
               </Stack>
             </GridItem>
           </Grid>
