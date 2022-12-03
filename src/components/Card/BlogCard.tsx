@@ -29,7 +29,7 @@ export const BlogCard = ({
 }: Props) => {
   return (
     <Card
-      onClick={() => Router.replace(`/blog/${id}`)}
+      onClick={() => Router.replace(`/blogger/${id}`)}
       cursor="pointer"
       size={"lg"}
       border="none"

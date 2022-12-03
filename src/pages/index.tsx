@@ -83,7 +83,7 @@ const Home: NextPage = () => {
                   <PrimaryButton onClick={() => Router.push("/about")}>
                     Saiba Mais
                   </PrimaryButton>
-                  <GhostButton onClick={() => Router.push("/blog")}>
+                  <GhostButton onClick={() => Router.push("/blogger")}>
                     Projetos
                   </GhostButton>
                 </Stack>
@@ -200,7 +200,7 @@ const Home: NextPage = () => {
         >
           <Stack color={"white"} align={"center"} spacing={5}>
             <Text as="b" fontSize={"5xl"}>
-              {project}
+              3
             </Text>
             <Divider w={isMobile ? 100 : 200} borderColor="white" />
             <Text as="b" fontSize={"2xl"}>
@@ -214,7 +214,7 @@ const Home: NextPage = () => {
             spacing={5}
           >
             <Text as="b" fontSize={"5xl"}>
-              {people}
+              242
             </Text>
             <Divider w={isMobile ? 100 : 200} borderColor="white" />
             <Text as="b" fontSize={"2xl"}>
@@ -228,7 +228,7 @@ const Home: NextPage = () => {
             spacing={5}
           >
             <Text as="b" fontSize={"5xl"}>
-              {stateAffected}
+              3
             </Text>
             <Divider w={isMobile ? 100 : 200} borderColor="white" />
             <Text as="b" fontSize={"2xl"}>
@@ -242,7 +242,7 @@ const Home: NextPage = () => {
             spacing={5}
           >
             <Text as="b" fontSize={"5xl"}>
-              {professionals}
+              26
             </Text>
             <Divider w={isMobile ? 100 : 200} borderColor="white" />
             <Text as="b" fontSize={"2xl"}>
@@ -373,21 +373,21 @@ const Home: NextPage = () => {
               description="Dentre as várias obras primas contidas neste disco, o destaque aqui é dado para a música “Emoriô” (Gilberto Gil/João Donato) que ganhou literalmente o mundo a partir de diferentes intérpretes além do próprio Donato."
               tag="Música"
               image="/images/blog/gil-bayana.jpg"
-              route="/blog/3"
+              route="/blogger/3"
             />
             <ArticleCard
               title="Como A EmoriÔ Digital Auxilia Na Erradicação Do Analfabetismo Nas Zonas Rurais"
               description="Enxergamos que apoiar projetos socioculturais que atuem no campo, zonas rurais e florestas é uma ótima forma de melhorar a educação, a sociedade e o mundo."
               tag="Analfabetismo"
               image="/images/blog/avo-crianca.jpg"
-              route="/blog/7"
+              route="/blogger/7"
             />
             <ArticleCard
               title="Como A Música Auxilia Na Educação"
               description="O alfabetismo é visto a partir da valorização da cultura escrita, ou seja, elementos da leitura e da escrita que fazem parte da vida do aluno e da prática social."
               tag="Tecnologia"
               image="/images/blog/menino-violao.jpg"
-              route="/blog/4"
+              route="/blogger/4"
             />
           </Stack>
         </Container>

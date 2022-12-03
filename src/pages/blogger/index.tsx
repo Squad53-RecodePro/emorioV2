@@ -20,7 +20,7 @@ import { BlogCard } from "../../components/Card/BlogCard";
 import { AuthLayout } from "../../layouts/auth";
 import { listBlog } from "../../utils/listaBlog";
 
-const Blog: NextPage = () => {
+const Blogger: NextPage = () => {
   const isMobile = useBreakpointValue({
     base: true,
     lg: false,
@@ -165,4 +165,4 @@ const Blog: NextPage = () => {
   );
 };
 
-export default Blog;
+export default Blogger;
