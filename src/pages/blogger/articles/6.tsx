@@ -33,7 +33,7 @@ const Article006: NextPage = () => {
             >
               07 dicas valiosas da Introdução de Web Sites que funcionam
             </Heading>
-            <Image src="/images/blog/business.jpg" />
+            <Image src="/images/blog/business.jpg" alt="bgImage" />
 
             <Stack spacing={0}>
               <Text as={"b"} fontSize={"1.5rem"} color={"blue.100"}>
@@ -85,7 +85,7 @@ const Article006: NextPage = () => {
                 </Text>
               </Box>
             </Flex>
-            <Image src="/images/articles/livro.jpeg" />
+            <Image src="/images/articles/livro.jpeg" alt="bgImage" />
 
             <AuthorArticle
               name="Felipe Morales"

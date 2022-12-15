@@ -33,7 +33,7 @@ const Article005: NextPage = () => {
             >
               Educação: Contraste entre meio urbano e rural
             </Heading>
-            <Image src="/images/blog/criancas-rurais.jpg" />
+            <Image src="/images/blog/criancas-rurais.jpg" alt="bgImage" />
 
             <Stack spacing={0}>
               <Text as={"b"} fontSize={"1.5rem"} color={"blue.100"}>

@@ -33,7 +33,7 @@ const Article004: NextPage = () => {
             >
               Como a música auxilia na educação
             </Heading>
-            <Image src="/images/blog/menino-violao.jpg" />
+            <Image src="/images/blog/menino-violao.jpg" alt="bgImage" />
 
             <Stack spacing={0}>
               <Text as={"b"} fontSize={"1.5rem"} color={"blue.100"}>

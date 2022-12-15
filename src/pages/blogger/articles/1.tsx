@@ -31,7 +31,7 @@ const Article001: NextPage = () => {
             >
               Pitch, Bastidores e Feedbacks
             </Heading>
-            <Image src="/images/blog/artigo.png" />
+            <Image src="/images/blog/artigo.png" alt="bgImage" />
 
             <Stack spacing={0}>
               <Text as={"b"} fontSize={"1.5rem"} color={"blue.100"}>

@@ -34,7 +34,7 @@ const Article007: NextPage = () => {
               Como a EmoriÔ Digital Auxilia na Erradicação do Analfabetismo nas
               Zonas Rurais
             </Heading>
-            <Image src="/images/blog/avo-crianca.jpg" />
+            <Image src="/images/blog/avo-crianca.jpg" alt="bgImage" />
 
             <Stack spacing={0}>
               <Text as={"b"} fontSize={"1.5rem"} color={"blue.100"}>

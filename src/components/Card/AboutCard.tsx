@@ -1,12 +1,11 @@
 import {
+  Badge,
   Box,
   Card,
   CardBody,
-  Icon,
+  Image,
   Stack,
   Text,
-  Image,
-  Badge,
 } from "@chakra-ui/react";
 
 interface Props {

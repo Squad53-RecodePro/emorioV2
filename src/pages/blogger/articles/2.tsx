@@ -33,7 +33,7 @@ const Article002: NextPage = () => {
             >
               Projeto Arte e Sustentabilidade
             </Heading>
-            <Image src="/images/blog/arte-sustentavel.jpeg" />
+            <Image src="/images/blog/arte-sustentavel.jpeg" alt="bgImage" />
 
             <Stack spacing={0}>
               <Text as={"b"} fontSize={"1.5rem"} color={"blue.100"}>
@@ -127,7 +127,10 @@ const Article002: NextPage = () => {
               pesquisados sobre o tema trabalhado, cortar papéis que coletaram e
               dividir por cores, selecionar os materiais e colar nas telas.
             </Text>
-            <Image src="/images/articles/arte-sustentavel01.jpeg" />
+            <Image
+              src="/images/articles/arte-sustentavel01.jpeg"
+              alt="bgImage"
+            />
             <Text fontSize={"1rem"} color="gray.200">
               As telas foram expostas no sábado letivo de 11 de junho,
               compartilhando com todo o ambiente escolar e a comunidade o
@@ -136,7 +139,10 @@ const Article002: NextPage = () => {
               de coleta seletiva, e móbiles com mensagens dos alunos sobre o que
               acharam importante de tudo que aprenderam.
             </Text>
-            <Image src="/images/articles/arte-sustentavel02.jpeg" />
+            <Image
+              src="/images/articles/arte-sustentavel02.jpeg"
+              alt="bgImage"
+            />
             <Text fontSize={"1rem"} color="gray.200">
               Foi um trabalho realizado com carinho e dedicação ao qual fiquei
               muito orgulhosa com o resultado e envolvimento dos alunos. E que
@@ -144,7 +150,10 @@ const Article002: NextPage = () => {
               nesse processo de degradação em que se encontra nosso planeta e a
               perspectiva para as futuras gerações.
             </Text>
-            <Image src="/images/articles/arte-sustentavel03.jpeg" />
+            <Image
+              src="/images/articles/arte-sustentavel03.jpeg"
+              alt="bgImage"
+            />
 
             <AuthorArticle
               name="Andréia Rodrigues"

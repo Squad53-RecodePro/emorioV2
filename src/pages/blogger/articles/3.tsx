@@ -33,7 +33,7 @@ const Article003: NextPage = () => {
             >
               Emoriô: conheça a música que inspirou nossa agência.
             </Heading>
-            <Image src="/images/blog/gil-bayana.jpg" />
+            <Image src="/images/blog/gil-bayana.jpg" alt="bgImage" />
 
             <Stack spacing={0}>
               <Text as={"b"} fontSize={"1.5rem"} color={"blue.100"}>
