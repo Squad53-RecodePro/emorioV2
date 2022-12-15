@@ -373,21 +373,21 @@ const Home: NextPage = () => {
               description="Dentre as várias obras primas contidas neste disco, o destaque aqui é dado para a música “Emoriô” (Gilberto Gil/João Donato) que ganhou literalmente o mundo a partir de diferentes intérpretes além do próprio Donato."
               tag="Música"
               image="/images/blog/gil-bayana.jpg"
-              route="/blogger/3"
+              route="/blogger/articles/3"
             />
             <ArticleCard
               title="Como A EmoriÔ Digital Auxilia Na Erradicação Do Analfabetismo Nas Zonas Rurais"
               description="Enxergamos que apoiar projetos socioculturais que atuem no campo, zonas rurais e florestas é uma ótima forma de melhorar a educação, a sociedade e o mundo."
               tag="Analfabetismo"
               image="/images/blog/avo-crianca.jpg"
-              route="/blogger/7"
+              route="/blogger/articles/7"
             />
             <ArticleCard
               title="Como A Música Auxilia Na Educação"
               description="O alfabetismo é visto a partir da valorização da cultura escrita, ou seja, elementos da leitura e da escrita que fazem parte da vida do aluno e da prática social."
               tag="Tecnologia"
               image="/images/blog/menino-violao.jpg"
-              route="/blogger/4"
+              route="/blogger/articles/4"
             />
           </Stack>
         </Container>
