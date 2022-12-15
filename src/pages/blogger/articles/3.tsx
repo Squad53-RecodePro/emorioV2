@@ -49,17 +49,17 @@ const Article003: NextPage = () => {
               no ano de 1975, João Donato afirma que foi o cantor e compositor
               Agostinho dos Santos quem o incentivara, poucos anos antes, a
               cantar suas próprias músicas, daí o lançamento em 1973 do
-              antológico álbum “Quem é quem” produzido por Marcos Valle e, de
+              antológico álbum Quem é quem produzido por Marcos Valle e, de
               certa forma, aquele que marcaria a volta de Donato de uma
               temporada de uma década nos Estados Unidos, agora também como
-              cantor. No mesmo ano de 1975, é lançado o álbum “Lugar Comum” que
-              dá continuidade à sua veia de cantor, sem deixar de lado a riqueza
-              de seus arranjos e a companhia do piano, onipresente. Neste disco
-              a sua parceria com Gilberto Gil, principalmente letrando suas
+              cantor. No mesmo ano de 1975, é lançado o álbum Lugar Comum que dá
+              continuidade à sua veia de cantor, sem deixar de lado a riqueza de
+              seus arranjos e a companhia do piano, onipresente. Neste disco a
+              sua parceria com Gilberto Gil, principalmente letrando suas
               músicas, é selada definitivamente com o lançamento de músicas que
               viraram grandes sucessos que marcam a sua carreira e a música
               brasileira até hoje. Dentre as várias obras primas contidas neste
-              disco, o destaque aqui é dado para a música “Emoriô” (Gilberto
+              disco, o destaque aqui é dado para a música Emoriô (Gilberto
               Gil/João Donato) que ganhou literalmente o mundo a partir de
               diferentes intérpretes além do próprio Donato. Mas afinal, o que é
               Emoriô? É interessante pensar que a letra de Emoriô, de certo
@@ -68,34 +68,33 @@ const Article003: NextPage = () => {
             </Text>
             <Text fontSize={"1rem"} color="gray.200">
               Emoriô, na realidade, não seria nem mesmo uma palavra, mas uma
-              frase em iorubá "E mo ri O", o que significa mesmo Eu Te Vejo, em
+              frase em iorubá EmoriÔ, o que significa mesmo Eu Te Vejo, em
               referência a Oxalá, uma reverência a este Orixá que guarda plena
-              relação com “o sol, a lua e o céu” e está associado à criação do
+              relação com o sol, a lua e o céu e está associado à criação do
               mundo e da própria espécie humana. Na criatividade de Donato e
               Gil, Emoriô tornou-se então um Ijexá e fez um enorme sucesso na
               década de 70 como uma das músicas mais ouvidas na Europa com o
               estouro em 1975 a partir do compacto duplo de Fafá de Belém,
-              lançado em Portugal, tendo em um dos lados "Emoriô" e do outro
-              "Naturalmente" (também do álbum “Lugar Comum”) do próprio João
-              Donato em parceria com Caetano Veloso. O sucesso de Fafá com as
-              duas músicas de Donato foi impressionante e marcou sua carreira
-              como sendo o compacto que a lançou dentro e fora do Brasil, ainda
-              antes dos primeiros long plays de lançamento de sua carreira
-              ("Tamba-tajá" - 1976, "Água" - 1977, "Banho de Cheiro" – 1978). A
-              gravação original, de Donato no álbum "Lugar Comum" (1975) tem o
-              próprio Donato nos Teclados, o baixista Novelli um dos integrantes
-              do Clube da Esquina, Fredera na guitarra, um dos integrantes da
-              icônica banda "Som Imaginário", bateria Wilson das Neves, Gilberto
-              Gil e uma das mais importantes violonistas na música popular
-              brasileira, principalmente no período da Bossa Nova, Rosinha de
-              Valença em algumas das faixas. Desde então, Emoriô foi executada e
-              gravada por dezenas de outros intérpretes e que são
-              imprescindíveis de serem conferidos, tais como o próprio Gilberto
-              Gil, Sandra de Sá, Sandra Portella, Duofel e Sérgio Mendes, nesta
-              música que representa dentre tantas e tantas outras de João
-              Donato, até hoje, uma de suas marcas: a congregação de
-              simplicidade com grande sofisticação, características
-              impressionantes de sua obra.
+              lançado em Portugal, tendo em um dos lados Emoriô e do outro
+              Naturalmente (também do álbum Lugar Comum) do próprio João Donato
+              em parceria com Caetano Veloso. O sucesso de Fafá com as duas
+              músicas de Donato foi impressionante e marcou sua carreira como
+              sendo o compacto que a lançou dentro e fora do Brasil, ainda antes
+              dos primeiros long plays de lançamento de sua carreira (Tamba-tajá
+              - 1976, Água - 1977, Banho de Cheiro – 1978). A gravação original,
+              de Donato no álbum Lugar Comum (1975) tem o próprio Donato nos
+              Teclados, o baixista Novelli um dos integrantes do Clube da
+              Esquina, Fredera na guitarra, um dos integrantes da icônica banda
+              Som Imaginário, bateria Wilson das Neves, Gilberto Gil e uma das
+              mais importantes violonistas na música popular brasileira,
+              principalmente no período da Bossa Nova, Rosinha de Valença em
+              algumas das faixas. Desde então, Emoriô foi executada e gravada
+              por dezenas de outros intérpretes e que são imprescindíveis de
+              serem conferidos, tais como o próprio Gilberto Gil, Sandra de Sá,
+              Sandra Portella, Duofel e Sérgio Mendes, nesta música que
+              representa dentre tantas e tantas outras de João Donato, até hoje,
+              uma de suas marcas: a congregação de simplicidade com grande
+              sofisticação, características impressionantes de sua obra.
             </Text>
 
             <Flex bg={"white.200"} p={5}>
@@ -107,7 +106,7 @@ const Article003: NextPage = () => {
               >
                 <Text as="i" fontSize={"0.8rem"} color="gray.200">
                   Emoriô, na realidade, não seria nem mesmo uma palavra, mas uma
-                  frase em iorubá "E mo ri O", o que significa mesmo Eu Te Vejo.
+                  frase em iorubá Emoriô, o que significa mesmo Eu Te Vejo.
                 </Text>
               </Box>
             </Flex>

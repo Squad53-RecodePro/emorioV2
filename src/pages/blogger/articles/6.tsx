@@ -45,15 +45,15 @@ const Article006: NextPage = () => {
             </Stack>
 
             <Text fontSize={"1rem"} color="gray.200">
-              “Basta percorrer o infindável atoleiro da World Wide Web – arranha
+              Basta percorrer o infindável atoleiro da World Wide Web – arranha
               céus vazios, parques de diversões abandonados, obscuros recantos
               quebrados ocasionalmente por locais limpos e bem iluminados – para
               se ver que há alguma coisa que separar os sites da Web que
               funcionam da atmosfera morta. De onde vem um bom design da Web?
               Black acredita que os princípios que nortearam a qualidade do
-              design impresso por centenas de anos são igualmente válidos
-              online; em alguns casos são ainda mais. Eis, então, aqui ..." 7
-              dicas valiosas da Introdução de Web Sites que funcionam:
+              design impresso por centenas de anos são igualmente válidos online
+              em alguns casos são ainda mais. Eis, então, aqui 7 dicas valiosas
+              da Introdução de Web Sites que funcionam:
             </Text>
             <Text>
               <li>
